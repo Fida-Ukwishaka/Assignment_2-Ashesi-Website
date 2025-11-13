@@ -1,6 +1,4 @@
 import org.junit.Test;
-
-import java.beans.Transient;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -20,12 +18,14 @@ public class JUnit {
             2,
             "Computer Science Department",
             "Dr. Ebo",
-            "Abstraction and Inheritance"
+            "Abstraction and Inheritance",
+            "Object-Oriented Programming",
+            "Blaise Izerimana"
         );
 
         // Second Lecture object
         AshesiEvents lecture2 = new Lectures(
-            "CLASS COURSE: Data Structures",
+                      "CLASS COURSE: Data Structures",
             "Lecture",
             "Nana Araba APT Hall 216",
             LocalDate.of(2025, 6, 21),
@@ -33,7 +33,9 @@ public class JUnit {
             2,
             "Computer Science Department",
             "Dr. Daniel Addo",
-            "Trees and Graphs"
+            "Trees and Graphs",
+            "Algorithms and Data Structures",
+            "Sarah Mensah"
         );
         // Summary
         System.out.println("===== Lecture Sessions =====");
@@ -43,8 +45,9 @@ public class JUnit {
         System.out.println();
         System.out.println("\n-----------------------\n");
 
+    }
 
-        // Create a Sports event
+    // Create a Sports event
     @Test
     public void Sport() {
         Sports sportsEvent1 = new Sports(
@@ -84,7 +87,8 @@ public class JUnit {
         System.out.println();
         System.out.println("\n-----------------------\n");
 
-        // Create a Party event
+    }
+    // Create a Party event
     @Test
     public void Party() {
          // First Party object

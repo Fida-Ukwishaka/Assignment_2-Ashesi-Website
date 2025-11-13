@@ -9,7 +9,7 @@ public class Lectures extends AshesiEvents {
     private String Topic;
 
     // Constructor
-    public Lectures(String eventName, String eventType, String eventLocation, LocalDate eventDate, LocalTime eventTime, int duration, String eventorganizer, String speaker, String topic) {
+    public Lectures(String eventName, String eventType, String eventLocation, LocalDate eventDate, LocalTime eventTime, int duration, String eventorganizer, String LecturerName, String Topic, String Course, String FacultyIntern) {
         super(eventName, eventType, eventLocation, eventDate, eventTime, duration, eventorganizer);
         this.LecturerName = LecturerName;
         this.FacultyIntern = FacultyIntern;
@@ -31,19 +31,6 @@ public class Lectures extends AshesiEvents {
         return Topic;
     }
 
-   // Setter methods
-    public void setLecturerName(String lecturerName) {
-        this.LecturerName = lecturerName;
-    }
-    public void setFacultyIntern(String facultyIntern) {
-        this.FacultyIntern = facultyIntern;
-    }
-    public void setCourse(String course) {
-        this.Course = course;
-    }
-    public void setTopic(String topic) {
-        this.Topic = topic;
-    }
 
     // Implementing the eventSummary method from EventDetails interface
     @Override

@@ -16,7 +16,9 @@ public class EventDriver {
             2,
             "Computer Science Department",
             "Dr. Ebo",
-            "Abstraction and Inheritance"
+            "Abstraction and Inheritance",
+            "Object-Oriented Programming",
+            "Blaise Izerimana"
         );
 
         // Second Lecture object
@@ -29,7 +31,9 @@ public class EventDriver {
             2,
             "Computer Science Department",
             "Dr. Daniel Addo",
-            "Trees and Graphs"
+            "Trees and Graphs",
+            "Algorithms and Data Structures",
+            "Sarah Mensah"
         );
 
 

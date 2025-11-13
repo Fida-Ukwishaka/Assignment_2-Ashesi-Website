@@ -3,18 +3,18 @@ import java.time.LocalTime;
 
 public class Sports extends AshesiEvents {
     private String sportType;
-    private String HostAssociation;
-    private int GameSeason;
-    private String Teams;
+    private String hostAssociation;
+    private int gameSeason;
+    private String teams;
     
 
     // Constructor
-    public Sports(String eventName, String eventType, String eventLocation, LocalDate eventDate, LocalTime eventTime, int duration, String eventorganizer, String sportType, String HostAssociation, int GameSeason, String Teams) {
+    public Sports(String eventName, String eventType, String eventLocation, LocalDate eventDate, LocalTime eventTime, int duration, String eventorganizer, String sportType, String hostAssociation, int gameSeason, String teams) {
         super(eventName, eventType, eventLocation, eventDate, eventTime, duration, eventorganizer);
         this.sportType = sportType;
-        this.Teams = Teams;
-        this.HostAssociation = HostAssociation;
-        this.GameSeason = GameSeason;
+        this.teams = teams;
+        this.hostAssociation = hostAssociation;
+        this.gameSeason = gameSeason;
 
     }
 
@@ -23,28 +23,13 @@ public class Sports extends AshesiEvents {
         return sportType;
     }
     public String getHostAssociation() {
-        return HostAssociation;
+        return hostAssociation;
     }
     public int getGameSeason() {
-        return GameSeason;
+        return gameSeason;
     }
     public String getTeamsPlaying() {
-        return Teams;
-    }
-   
-
-    // Setter methods
-    public void setSportType(String sportType) {
-        this.sportType = sportType;
-    }
-    public void setHostAssociation(String hostAssociation) {
-        this.HostAssociation = hostAssociation;
-    }
-    public void setGameSeason(int gameSeason) {
-        this.GameSeason = gameSeason;
-    }
-    public void setTeamsInvolved(String teamsInvolved) {
-        this.Teams = Teams;
+        return teams;
     }
 
     // Implementing the eventSummary method from EventDetails interface
@@ -52,9 +37,9 @@ public class Sports extends AshesiEvents {
     public String eventSummary() {
         return super.eventSummary() + 
                "\nSport Type: " + sportType + 
-               "\nHosted by: " + HostAssociation + 
-               "\nSeason " + GameSeason +
-               "\nTeams Involved: " + Teams;
+               "\nHosted by: " + hostAssociation + 
+               "\nSeason " + gameSeason +
+               "\nTeams Involved: " + teams;
     }
     
 }

@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public abstract class AshesiEvents implements EventShchedule, EventDetails {
+public abstract class AshesiEvents {
 
     private String eventName;
     private String eventType;
@@ -45,28 +45,6 @@ public abstract class AshesiEvents implements EventShchedule, EventDetails {
         return eventorganizer;
     }
 
-    // setter methods
-    public void setEventName(String eventName) {
-        this.eventName = eventName; 
-    }
-    public void setEventType(String eventType) {
-        this.eventType = eventType;
-    }
-    public void setEventLocation(String location) {
-        this.eventLocation = location;
-    }
-    public void setEventDate(LocalDate date) {
-        this.eventDate = date;
-    }
-    public void setEventTime(LocalTime time) {
-        this.eventTime = time;
-    }
-    public void setDuration(int duration) {
-        this.Duration = duration;
-    }
-    public void setEventorganizer() {
-        this.eventorganizer = eventorganizer;
-    }
 
     // event summary method
     public String eventSummary() {
