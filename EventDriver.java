@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.ArrayList;
 
 
 public class EventDriver {
@@ -64,6 +65,20 @@ public class EventDriver {
 
         // Print the event summary
         System.out.println(party.eventSummary());
+
+        // List of events
+        ArrayList<AshesiEvents> events = new ArrayList<>();
+        events.add(lecture);
+        events.add(sportsEvent);
+        events.add(party);
+
+        for (AshesiEvents event : events) {
+            //separator
+            System.out.println("\n-----------------------\n");
+            System.out.println("\nEvent Summary:\n" + event.eventSummary());
+            System.out.println();
+        }
+
     }
 
 
