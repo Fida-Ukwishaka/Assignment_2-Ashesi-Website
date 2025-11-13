@@ -1,9 +1,15 @@
+import org.junit.Test;
+
+import java.beans.Transient;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 
+
+
 public class JUnit {
-    public static void main(String[] args) {
+    @Test
+    public void Lectures() {
         // Create a Lecture event
         AshesiEvents lecture1 = new Lectures(
             "CLASS COURSE: Object-Oriented Programming",
@@ -39,6 +45,8 @@ public class JUnit {
 
 
         // Create a Sports event
+    @Test
+    public void Sport() {
         Sports sportsEvent1 = new Sports(
             "Varsity League",
             "Sports",
@@ -77,6 +85,9 @@ public class JUnit {
         System.out.println("\n-----------------------\n");
 
         // Create a Party event
+    @Test
+    public void Party() {
+         // First Party object
         Parties party1 = new Parties(
             "Pary With Mavo",
             "Party",
